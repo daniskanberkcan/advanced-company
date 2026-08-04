@@ -488,3 +488,33 @@ flex-direction:column;
 }
 
 }
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+    height:60px;
+    width:auto;
+}
+
+.logo-text{
+    display:flex;
+    flex-direction:column;
+    line-height:1;
+}
+
+.logo-text span{
+    font-size:28px;
+    font-weight:800;
+    letter-spacing:2px;
+}
+
+.logo-text small{
+    color:#56b6ff;
+    font-size:13px;
+    margin-top:5px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
