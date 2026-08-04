@@ -23,7 +23,7 @@
             <a href="#about">About</a>
             <a href="#expertise">Expertise</a>
             <a href="#projects">Projects</a>
-            <a href="#technology">Flagship</a>
+            <a href="#technology">Flagship Tech</a>
             <a href="#why-us">Why Us</a>
             <a href="#contact">Contact</a>
         </nav>
@@ -67,10 +67,10 @@
         </div>
     </section>
 
-    <!-- SLIDE 3 & 4: EXPERTISE -->
+    <!-- SLIDE 3: EXPERTISE -->
     <section id="expertise" class="full-page">
         <div class="container">
-            <div class="section-header"><h2>Engineering Capabilities</h2><div class="line"></div></div>
+            <div class="section-header"><h2>Core Competencies</h2><div class="line"></div></div>
             <div class="grid-3">
                 <div class="glass-card">
                     <i class="fa-solid fa-satellite-dish card-icon"></i>
@@ -78,8 +78,8 @@
                     <ul>
                         <li>INS/GNSS Integration</li>
                         <li>Sensor Fusion (EKF/UKF)</li>
+                        <li>Fiber Optic Gyros</li>
                         <li>AHRS Development</li>
-                        <li>Terrain Referenced Nav</li>
                     </ul>
                 </div>
                 <div class="glass-card">
@@ -88,8 +88,8 @@
                     <ul>
                         <li>Embedded C/C++ Dev.</li>
                         <li>Real-Time Systems (RTOS)</li>
-                        <li>Firmware & Driver Design</li>
                         <li>STM32 & ARM Platforms</li>
+                        <li>PCB Design & Bring-up</li>
                     </ul>
                 </div>
                 <div class="glass-card">
@@ -106,15 +106,15 @@
         </div>
     </section>
 
-    <!-- SLIDE 5 & 6: ALL PROJECTS -->
+    <!-- SLIDE 4: PROJECTS -->
     <section id="projects" class="full-page">
         <div class="container">
-            <div class="section-header"><h2>Selected Projects</h2><div class="line"></div></div>
+            <div class="section-header"><h2>Selected Project Experience</h2><div class="line"></div></div>
             <div class="project-grid-detailed">
                 <div class="project-category">
                     <div class="cat-header"><h3>ASELSAN</h3></div>
                     <div class="project-card-v2"><h4>UDOKS</h4><p>Proprietary navigation algorithms for GNSS-denied and jammed environments.</p></div>
-                    <div class="project-card-v2"><h4>YNHKS</h4><p>High-precision motion control algorithms and system integration.</p></div>
+                    <div class="project-card-v2"><h4>YNHKS</h4><p>High-precision motion control algorithms and system integration successfully delivered.</p></div>
                 </div>
                 <div class="project-category">
                     <div class="cat-header"><h3>TÜBİTAK</h3></div>
@@ -132,41 +132,95 @@
         </div>
     </section>
 
-    <!-- SLIDE 7 & 8: FLAGSHIP TECH -->
+    <!-- SLIDE 5: FLAGSHIP TECH 1 (LANDING SYSTEM) -->
     <section id="technology" class="full-page">
         <div class="container">
-            <div class="section-header"><h2>Flagship Technologies</h2><div class="line"></div></div>
-            <div class="tech-content-grid">
-                <div class="tech-item-v2">
-                    <div class="tech-text">
-                        <h3><i class="fa-solid fa-plane-arrival"></i> GPS-Denied Landing System</h3>
-                        <p>LiDAR & IMU sensor fusion providing 400Hz output and 2cm altitude accuracy for UAVs.</p>
-                    </div>
+            <div class="section-header">
+                <span class="badge">FLAGSHIP TECHNOLOGY</span>
+                <h2>GPS-Denied Landing Information System</h2>
+                <div class="line"></div>
+            </div>
+            <div class="tech-main-grid">
+                <div class="tech-visual-box">
+                    <img src="images/landing-tech.jpg" alt="Landing Tech Illustration" class="tech-feature-img">
                 </div>
-                <div class="tech-item-v2">
-                    <div class="tech-text">
-                        <h3><i class="fa-solid fa-mountain-sun"></i> Terrain Referenced Nav (TRN)</h3>
-                        <p>Radar sensing and DEM matching for reliable positioning in contested EW environments.</p>
+                <div class="tech-data-box">
+                    <p class="tech-desc">A high-performance navigation solution designed for autonomous landing in contested environments. It combines <strong>LiDAR and Inertial sensor data</strong> through advanced fusion algorithms.</p>
+                    
+                    <div class="spec-table">
+                        <div class="spec-row">
+                            <div class="spec-cell"><i class="fa-solid fa-bolt"></i> <strong>Navigation Output</strong></div>
+                            <div class="spec-cell accent-text">400 Hz</div>
+                        </div>
+                        <div class="spec-row">
+                            <div class="spec-cell"><i class="fa-solid fa-arrows-up-down"></i> <strong>Altitude Accuracy</strong></div>
+                            <div class="spec-cell accent-text">2 cm</div>
+                        </div>
+                        <div class="spec-row">
+                            <div class="spec-cell"><i class="fa-solid fa-compass"></i> <strong>Attitude Accuracy</strong></div>
+                            <div class="spec-cell accent-text">≤ 0.5° (R/P/Y)</div>
+                        </div>
+                        <div class="spec-row">
+                            <div class="spec-cell"><i class="fa-solid fa-microchip"></i> <strong>Sensor Fusion</strong></div>
+                            <div class="spec-cell">LiDAR & IMU</div>
+                        </div>
                     </div>
+
+                    <ul class="tech-bullets">
+                        <li>Automatic relative navigation below 8 meters</li>
+                        <li>Reliable operation on dynamic/moving landing surfaces</li>
+                        <li>Designed for UAVs, helicopters and autonomous platforms</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SLIDE 12: WHY US -->
+    <!-- SLIDE 6: FLAGSHIP TECH 2 (TRN) -->
+    <section id="technology-2" class="full-page dark-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge">TECHNOLOGY VISION</span>
+                <h2>Terrain Referenced Navigation (TRN)</h2>
+                <div class="line"></div>
+            </div>
+            <div class="tech-main-grid reverse">
+                <div class="tech-data-box">
+                    <p class="tech-desc">Next-generation navigation for autonomous aerial platforms operating in contested electronic warfare (EW) environments.</p>
+                    
+                    <div class="tech-capabilities-grid">
+                        <div class="cap-item">Radar-Based Sensing</div>
+                        <div class="cap-item">DEM Matching</div>
+                        <div class="cap-item">INS/GNSS Integration</div>
+                        <div class="cap-item">Barometric Estimation</div>
+                    </div>
+
+                    <div class="info-highlight">
+                        <i class="fa-solid fa-circle-info"></i>
+                        Provides reliable positioning by matching radar measurements with digital elevation maps when satellite navigation is jammed.
+                    </div>
+                </div>
+                <div class="tech-visual-box">
+                    <img src="images/trn-tech.jpg" alt="TRN System Diagram" class="tech-feature-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 7: WHY US -->
     <section id="why-us" class="full-page">
         <div class="container">
             <div class="section-header"><h2>Why Choose Us?</h2><div class="line"></div></div>
             <div class="grid-4">
-                <div class="why-card"><h4>Proven Projects</h4><p>Track record with ASELSAN & TÜBİTAK.</p></div>
-                <div class="why-card"><h4>Local Support</h4><p>On-site engineering support in Türkiye.</p></div>
-                <div class="why-card"><h4>Deep Expertise</h4><p>Specialized in Nav Algos and RTOS.</p></div>
-                <div class="why-card"><h4>Rapid Prototyping</h4><p>Fast development for mission needs.</p></div>
+                <div class="why-card"><h4>Proven Experience</h4><p>Track record in defense industry projects.</p></div>
+                <div class="why-card"><h4>Local Support</h4><p>Dedicated engineering support in Ankara.</p></div>
+                <div class="why-card"><h4>Specialized Expertise</h4><p>Deep knowledge in Nav Algos and RTOS.</p></div>
+                <div class="why-card"><h4>Rapid Prototyping</h4><p>Fast cycles for mission-critical needs.</p></div>
             </div>
         </div>
     </section>
 
-    <!-- SLIDE 13: CONTACT -->
+    <!-- SLIDE 8: CONTACT -->
     <section id="contact" class="full-page">
         <div class="container">
             <div class="contact-card-final">
