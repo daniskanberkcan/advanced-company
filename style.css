@@ -324,3 +324,26 @@ footer { padding: 40px 0; border-top: 1px solid var(--border); text-align: cente
 .logo-link:hover {
     transform: scale(1.02); /* Üzerine gelince çok hafif büyüme efekti */
 }
+/* Language Switcher Styling */
+.lang-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 30px;
+    background: rgba(255,255,255,0.08);
+    padding: 6px 16px;
+    border-radius: 25px;
+    border: 1px solid var(--border);
+}
+.lang-switch button {
+    background: none; border: none; color: #888;
+    cursor: pointer; font-family: inherit; font-weight: 800;
+    font-size: 13px; transition: 0.3s;
+}
+.lang-switch button.active { color: var(--accent); }
+.lang-switch button:hover { color: #fff; }
+.lang-switch span { color: #444; font-size: 12px; }
+
+/* Logo Link Reset */
+.logo-link { text-decoration: none; color: inherit; display: block; transition: 0.3s; }
+.logo-link:hover { transform: scale(1.02); }
