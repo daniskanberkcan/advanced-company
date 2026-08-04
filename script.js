@@ -46,25 +46,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 3. İSTATİSTİK SAYACI FONKSİYONU
     function startCounter(counterElement) {
-        if (!counterElement || counterElement.dataset.started === "true") return;
-        
-        counterElement.dataset.started = "true";
-        const target = parseInt(counterElement.innerText.replace('+', '').replace('%', ''));
-        const suffix = counterElement.innerText.includes('+') ? '+' : (counterElement.innerText.includes('%') ? '%' : '');
-        let count = 0;
-        const speed = 2000 / target; // Tüm sayılar 2 saniyede tamamlansın
+    if (!counterElement || counterElement.dataset.started === "true") return;
+    
+    counterElement.dataset.started = "true";
+    const target = parseInt(counterElement.getAttribute("data-target"));
+    
+    // Hangi sayıya hangi işaretin geleceğini belirleyelim
+    let suffix = "";
+    if (target === 10) suffix = "+";  // 10+ olması için
+    if (target === 100) suffix = "%"; // 100% olması için
 
-        const update = () => {
-            if (count < target) {
-                count++;
-                counterElement.innerText = count + suffix;
-                setTimeout(update, speed);
-            } else {
-                counterElement.innerText = target + suffix;
-            }
-        };
-        update();
-    }
+    let count = 0;
+    const duration = 2000; // 2 saniye sürecek
+    const increment = target / (duration / 16); // 60 FPS bazlı artış
+
+    const update = () => {
+        count += increment;
+        if (count < target) {
+            counterElement.innerText = Math.ceil(count) + suffix;
+            requestAnimationFrame(update);
+        } else {
+            counterElement.innerText = target + suffix;
+        }
+    };
+    update();
+}
 
     // 4. HERO MOUSE PARALLAX (Hafif ve Akıcı)
     const hero = document.querySelector(".hero");
