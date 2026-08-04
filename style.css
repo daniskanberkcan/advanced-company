@@ -1068,3 +1068,122 @@ SMOOTH TRANSITIONS
 transition:all .35s ease;
 
 }
+.hero-tag{
+
+display:inline-block;
+
+padding:8px 18px;
+
+border:1px solid rgba(255,255,255,.25);
+
+border-radius:30px;
+
+font-size:13px;
+
+letter-spacing:2px;
+
+margin-bottom:30px;
+
+color:#42b8ff;
+
+background:rgba(255,255,255,.05);
+
+}
+
+.hero-subtitle{
+
+margin:35px auto;
+
+max-width:800px;
+
+font-size:22px;
+
+line-height:1.8;
+
+color:#d0d6dc;
+
+}
+
+.hero-stats{
+
+margin-top:70px;
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:25px;
+
+}
+
+.stat{
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.08);
+
+backdrop-filter:blur(10px);
+
+padding:30px;
+
+border-radius:18px;
+
+transition:.3s;
+
+}
+
+.stat:hover{
+
+transform:translateY(-10px);
+
+border-color:#42b8ff;
+
+box-shadow:0 20px 40px rgba(0,132,255,.15);
+
+}
+
+.stat h2{
+
+font-size:42px;
+
+color:#42b8ff;
+
+margin-bottom:10px;
+
+}
+
+.stat span{
+
+font-size:15px;
+
+letter-spacing:1px;
+
+color:#d7d7d7;
+
+}
+
+.scroll-indicator{
+
+position:absolute;
+
+bottom:35px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+}
+
+.scroll-indicator span{
+
+display:block;
+
+width:2px;
+
+height:60px;
+
+background:white;
+
+animation:scroll 2s infinite;
+
+}
