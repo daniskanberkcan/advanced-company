@@ -30,20 +30,20 @@
     </header>
 
     <!-- SLIDE 1: HERO -->
-    <section class="full-page hero">
+    <section id="hero" class="full-page">
         <div class="hero-content">
             <span class="hero-tag">DEFENSE • AEROSPACE • AUTONOMY</span>
             <h1>ADVANCED TEKNOLOJİ<br>MÜHENDİSLİK ve TİC. LTD. ŞTİ.</h1>
-            <p class="hero-subtitle">High-Performance Inertial Navigation and System Design Solutions</p>
+            <p class="hero-subtitle">Guidance, Control, Navigation and High-Performance System Design</p>
             <div class="hero-buttons">
-                <a href="#projects" class="btn-primary">Our Experience</a>
+                <a href="#projects" class="btn-primary">View Experience</a>
                 <a href="#contact" class="btn-secondary">Contact Us</a>
             </div>
             <div class="hero-stats">
                 <div class="stat"><h2>2020</h2><span>Founded</span></div>
                 <div class="stat"><h2 class="counter" data-target="10">0</h2><span>Projects</span></div>
                 <div class="stat"><h2 class="counter" data-target="2">0</h2><span>Major Customers</span></div>
-                <div class="stat"><h2 class="counter" data-target="100">0</h2><span>Engineering Focus</span></div>
+                <div class="stat"><h2 class="counter" data-target="100">0</h2><span>Eng. Focus</span></div>
             </div>
         </div>
     </section>
@@ -56,12 +56,12 @@
                 <div class="line"></div>
             </div>
             <div class="about-content">
-                <p>Advanced Technology & Engineering is a Turkish engineering company specializing in inertial navigation systems, MEMS inertial sensor integration, and autonomous technologies for defense and aerospace applications. We develop innovative, high-performance solutions for next-generation platforms.</p>
+                <p class="section-p">Advanced Technology & Engineering is a Turkish engineering company specializing in inertial navigation systems, MEMS inertial sensor integration, and autonomous technologies for defense and aerospace applications. We develop innovative, high-performance solutions for next-generation platforms.</p>
                 <div class="about-grid">
                     <div class="info-box"><h4>Founded</h4><p>2020</p></div>
-                    <div class="info-box"><h4>Headquarters</h4><p>Ankara, Türkiye</p></div>
+                    <div class="info-box"><h4>Location</h4><p>Ankara, Türkiye</p></div>
                     <div class="info-box"><h4>Industry</h4><p>Defense & Aerospace</p></div>
-                    <div class="info-box"><h4>Status</h4><p>ASELSAN & HAVELSAN Approved</p></div>
+                    <div class="info-box"><h4>Status</h4><p>Approved Supplier</p></div>
                 </div>
             </div>
         </div>
@@ -70,7 +70,7 @@
     <!-- SLIDE 3 & 4: EXPERTISE -->
     <section id="expertise" class="full-page">
         <div class="container">
-            <div class="section-header"><h2>Core Competencies</h2><div class="line"></div></div>
+            <div class="section-header"><h2>Engineering Capabilities</h2><div class="line"></div></div>
             <div class="grid-3">
                 <div class="glass-card">
                     <i class="fa-solid fa-satellite-dish card-icon"></i>
@@ -78,8 +78,8 @@
                     <ul>
                         <li>INS/GNSS Integration</li>
                         <li>Sensor Fusion (EKF/UKF)</li>
-                        <li>Fiber Optic Gyros</li>
                         <li>AHRS Development</li>
+                        <li>Terrain Referenced Nav</li>
                     </ul>
                 </div>
                 <div class="glass-card">
@@ -88,15 +88,15 @@
                     <ul>
                         <li>Embedded C/C++ Dev.</li>
                         <li>Real-Time Systems (RTOS)</li>
+                        <li>Firmware & Driver Design</li>
                         <li>STM32 & ARM Platforms</li>
-                        <li>PCB Design & Bring-up</li>
                     </ul>
                 </div>
                 <div class="glass-card">
                     <i class="fa-solid fa-jet-fighter card-icon"></i>
-                    <h3>Engineering</h3>
+                    <h3>Aerospace</h3>
                     <ul>
-                        <li>UAV/UAS Avionics</li>
+                        <li>UAV Avionics Design</li>
                         <li>Flight Control Computers</li>
                         <li>Sensor Calibration</li>
                         <li>MATLAB Modeling</li>
@@ -106,58 +106,27 @@
         </div>
     </section>
 
-    <!-- SLIDE 5 & 6: ALL PROJECTS (SUNUMDAKİ TÜM PROJELER) -->
+    <!-- SLIDE 5 & 6: ALL PROJECTS -->
     <section id="projects" class="full-page">
         <div class="container">
-            <div class="section-header"><h2>Selected Project Experience</h2><div class="line"></div></div>
+            <div class="section-header"><h2>Selected Projects</h2><div class="line"></div></div>
             <div class="project-grid-detailed">
-                <!-- ASELSAN & TÜBİTAK -->
                 <div class="project-category">
-                    <div class="cat-header"><h3>ASELSAN & TÜBİTAK Projects</h3></div>
-                    <div class="project-card-v2">
-                        <h4>UDOKS (Aselsan)</h4>
-                        <p>Navigation algorithms for GNSS-denied and GPS-jammed environments.</p>
-                    </div>
-                    <div class="project-card-v2">
-                        <h4>YNHKS (Aselsan)</h4>
-                        <p>High-precision motion control algorithms and system integration.</p>
-                    </div>
-                    <div class="project-card-v2">
-                        <h4>Dual GPS Nav (Tübitak)</h4>
-                        <p>Hybrid navigation using dual GNSS, IMU, and magnetometer fusion.</p>
-                    </div>
+                    <div class="cat-header"><h3>ASELSAN</h3></div>
+                    <div class="project-card-v2"><h4>UDOKS</h4><p>Proprietary navigation algorithms for GNSS-denied and jammed environments.</p></div>
+                    <div class="project-card-v2"><h4>YNHKS</h4><p>High-precision motion control algorithms and system integration.</p></div>
                 </div>
-                <!-- TÜBİTAK Continued -->
                 <div class="project-category">
-                    <div class="cat-header"><h3>System Deliveries</h3></div>
-                    <div class="project-card-v2">
-                        <h4>GPS Rotation System</h4>
-                        <p>High-accuracy rotational measurement for high-dynamic platforms.</p>
-                    </div>
-                    <div class="project-card-v2">
-                        <h4>Onboard Landing System</h4>
-                        <p>Laser-based altitude and velocity estimation for autonomous flight.</p>
-                    </div>
-                    <div class="project-card-v2">
-                        <h4>Flight Control Computer</h4>
-                        <p>Complete control systems for drones and helicopters.</p>
-                    </div>
+                    <div class="cat-header"><h3>TÜBİTAK</h3></div>
+                    <div class="project-card-v2"><h4>GPS Rotation System</h4><p>High-accuracy rotational measurement for high-dynamic platforms.</p></div>
+                    <div class="project-card-v2"><h4>Dual GPS Navigation</h4><p>Hybrid nav using dual GNSS, IMU, and magnetometer fusion.</p></div>
+                    <div class="project-card-v2"><h4>Onboard Landing</h4><p>Laser-based altitude and velocity estimation for autonomous flight.</p></div>
                 </div>
-                <!-- ADVANCED R&D -->
                 <div class="project-category">
-                    <div class="cat-header"><h3>Advanced Internal R&D</h3></div>
-                    <div class="project-card-v2">
-                        <h4>Magnetometer-Free Calib.</h4>
-                        <p>Novel methodology eliminating external magnetic references.</p>
-                    </div>
-                    <div class="project-card-v2">
-                        <h4>IMU Calibration</h4>
-                        <p>Proprietary calibration approach to improve navigation accuracy.</p>
-                    </div>
-                    <div class="project-card-v2">
-                        <h4>Camera Pose Estimation</h4>
-                        <p>Vision-based orientation using reference patterns.</p>
-                    </div>
+                    <div class="cat-header"><h3>INTERNAL R&D</h3></div>
+                    <div class="project-card-v2"><h4>Mag-Free Calib</h4><p>Novel calibration eliminating the need for external references.</p></div>
+                    <div class="project-card-v2"><h4>Camera Pose</h4><p>Vision-based orientation using reference patterns.</p></div>
+                    <div class="project-card-v2"><h4>IMU Calibration</h4><p>Proprietary IMU calibration for improved accuracy.</p></div>
                 </div>
             </div>
         </div>
@@ -168,27 +137,17 @@
         <div class="container">
             <div class="section-header"><h2>Flagship Technologies</h2><div class="line"></div></div>
             <div class="tech-content-grid">
-                <!-- Landing System -->
                 <div class="tech-item-v2">
                     <div class="tech-text">
                         <h3><i class="fa-solid fa-plane-arrival"></i> GPS-Denied Landing System</h3>
-                        <p>Advanced sensor fusion (LiDAR/IMU) for autonomous landing in contested environments.</p>
-                        <div class="tech-specs-mini">
-                            <span>400 Hz Output</span><span>2 cm Accuracy</span><span>≤ 0.5° Attitude</span>
-                        </div>
+                        <p>LiDAR & IMU sensor fusion providing 400Hz output and 2cm altitude accuracy for UAVs.</p>
                     </div>
-                    <img src="images/landing-tech.jpg" alt="Landing Tech" class="tech-img">
                 </div>
-                <!-- TRN -->
                 <div class="tech-item-v2">
                     <div class="tech-text">
                         <h3><i class="fa-solid fa-mountain-sun"></i> Terrain Referenced Nav (TRN)</h3>
-                        <p>Radar-based sensing and DEM matching for reliable positioning in GNSS-denied zones.</p>
-                        <div class="trn-tags">
-                            <span>Radar</span><span>DEM Matching</span><span>EW Contested</span>
-                        </div>
+                        <p>Radar sensing and DEM matching for reliable positioning in contested EW environments.</p>
                     </div>
-                    <img src="images/trn-tech.jpg" alt="TRN Tech" class="tech-img">
                 </div>
             </div>
         </div>
@@ -197,12 +156,12 @@
     <!-- SLIDE 12: WHY US -->
     <section id="why-us" class="full-page">
         <div class="container">
-            <div class="section-header"><h2>Why Partner With Us?</h2><div class="line"></div></div>
+            <div class="section-header"><h2>Why Choose Us?</h2><div class="line"></div></div>
             <div class="grid-4">
-                <div class="why-card"><h4>Proven Defense Projects</h4><p>Track record with Aselsan & Tübitak.</p></div>
-                <div class="why-card"><h4>Local Engineering</h4><p>Local support and rapid prototyping in Ankara.</p></div>
-                <div class="why-card"><h4>Specialized Expertise</h4><p>Deep knowledge in Nav Algos and Embedded C.</p></div>
-                <div class="why-card"><h4>Agile Development</h4><p>Fast development cycles for mission-critical needs.</p></div>
+                <div class="why-card"><h4>Proven Projects</h4><p>Track record with ASELSAN & TÜBİTAK.</p></div>
+                <div class="why-card"><h4>Local Support</h4><p>On-site engineering support in Türkiye.</p></div>
+                <div class="why-card"><h4>Deep Expertise</h4><p>Specialized in Nav Algos and RTOS.</p></div>
+                <div class="why-card"><h4>Rapid Prototyping</h4><p>Fast development for mission needs.</p></div>
             </div>
         </div>
     </section>
@@ -226,7 +185,7 @@
     </section>
 
     <footer>
-        <p>Advanced Teknoloji Mühendislik ve Ticaret Limited Şirketi © 2026</p>
+        <p>© 2026 Advanced Technology & Engineering | All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>
