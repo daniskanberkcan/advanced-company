@@ -48,7 +48,7 @@ header {
 }
 .logo { display: flex; align-items: center; gap: 20px; }
 .logo img { 
-    height: 220px; /* Logo Boyutu Büyütüldü */
+    height: 320px; /* Logo Boyutu Büyütüldü */
     width: auto; 
     filter: drop-shadow(0 0 15px var(--accent-glow)); 
 }
