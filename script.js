@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     
-    // 1. NAVBAR SCROLL EFEKTİ
+    // 1. NAVBAR SCROLL
     const header = document.querySelector("header");
     window.addEventListener("scroll", () => {
         if (window.scrollY > 50) {
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // 2. INTERSECTION OBSERVER (Görünce Belirme Animasyonu)
+    // 2. INTERSECTION OBSERVER (Animasyonlar)
     const observerOptions = {
         threshold: 0.1,
         rootMargin: "0px 0px -50px 0px"
@@ -23,45 +23,50 @@ document.addEventListener("DOMContentLoaded", () => {
             if (entry.isIntersecting) {
                 entry.target.classList.add("show");
                 
-                // SADECE .counter SINIFINA SAHİP ELEMENTLERİ SAYDIR
-                if (entry.target.classList.contains('counter')) {
+                // SADECE .counter sınıfı varsa ve data-target varsa saydır
+                if (entry.target.classList.contains('counter') && entry.target.hasAttribute('data-target')) {
                     startCounter(entry.target);
                 }
             }
         });
     }, observerOptions);
 
-    // Animasyon eklenecek elemanlar
+    // Animasyon eklenecek tüm öğeler
     const animatedElements = document.querySelectorAll(".card, .project, .info-box, .stat, .counter, section h2");
     animatedElements.forEach(el => {
         el.classList.add("hidden"); 
         appearanceObserver.observe(el);
     });
 
-    // 3. İSTATİSTİK SAYACI FONKSİYONU (Sadece atanmış hedefleri sayar)
-    function startCounter(counterElement) {
-        if (counterElement.dataset.started === "true") return;
+    // 3. SAYAÇ FONKSİYONU (Hata Korumalı)
+    function startCounter(el) {
+        if (el.dataset.started === "true") return;
         
-        const target = parseInt(counterElement.getAttribute("data-target"));
-        if (isNaN(target)) return; // Hedef sayı yoksa dur
+        const targetStr = el.getAttribute("data-target");
+        const target = parseInt(targetStr);
 
-        counterElement.dataset.started = "true";
+        // Eğer hedef sayı değilse veya yoksa fonksiyondan çık (NaN hatasını engeller)
+        if (isNaN(target)) return;
+
+        el.dataset.started = "true";
         
-        // İşaretleri belirle (+ veya %)
+        let count = 0;
+        const duration = 2000; // 2 saniye
+        const stepTime = 15; // Güncelleme hızı
+        const increment = target / (duration / stepTime);
+
+        // İşaretleri belirle
         let suffix = "";
         if (target === 10) suffix = "+";
         if (target === 100) suffix = "%";
 
-        let count = 0;
-        const duration = 2000; // 2 saniye
-        const stepTime = Math.max(duration / target, 30);
-
         const timer = setInterval(() => {
-            count++;
-            counterElement.innerText = count + suffix;
+            count += increment;
             if (count >= target) {
-                counterElement.innerText = target + suffix;
+                el.innerText = target + suffix;
                 clearInterval(timer);
+            } else {
+                el.innerText = Math.floor(count) + suffix;
             }
         }, stepTime);
     }
@@ -70,10 +75,11 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener("click", function(e) {
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute("href"));
-            if (target) {
+            const targetId = this.getAttribute("href");
+            const targetEl = document.querySelector(targetId);
+            if (targetEl) {
                 window.scrollTo({
-                    top: target.offsetTop - 90,
+                    top: targetEl.offsetTop - 90,
                     behavior: "smooth"
                 });
             }
