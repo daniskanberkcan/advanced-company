@@ -134,3 +134,103 @@ footer p { color: #555; font-size: 14px; margin-bottom: 5px; }
     .tech-specs { flex-direction: column; gap: 30px; }
     .grid-4, .about-grid { grid-template-columns: 1fr; }
 }
+/* Projects Section V2 */
+.project-grid-detailed {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.project-category {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cat-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.cat-icon {
+    font-size: 24px;
+    background: var(--glass);
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+}
+
+.cat-header h3 {
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.project-card-v2 {
+    background: var(--glass);
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    transition: var(--transition);
+    text-align: left;
+}
+
+.project-card-v2:hover {
+    border-color: var(--accent);
+    background: rgba(255, 255, 255, 0.05);
+    transform: translateX(5px);
+}
+
+.project-card-v2 h4 {
+    color: var(--accent);
+    margin-bottom: 12px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.project-card-v2 p {
+    font-size: 14px;
+    color: var(--text-dim);
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Teknik Etiketler (Tech Tags) */
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tech-tags span {
+    background: rgba(33, 150, 243, 0.1);
+    color: var(--accent);
+    font-size: 10px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 150, 243, 0.2);
+    text-transform: uppercase;
+}
+
+.section-subtitle-text {
+    text-align: center;
+    color: var(--text-dim);
+    margin-top: -40px;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 1100px) {
+    .project-grid-detailed { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .project-grid-detailed { grid-template-columns: 1fr; }
+}
