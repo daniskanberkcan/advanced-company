@@ -3,10 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advanced Technology & Engineering | Defense & Aerospace Solutions</title>
-    <meta name="description" content="High-performance inertial navigation, sensor fusion, and autonomous systems for defense and aerospace.">
-    
-    <!-- CSS & Fonts -->
+    <title>Advanced Technology & Engineering | Company Presentation</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +13,6 @@
 </head>
 <body>
 
-    <!-- ================= HEADER ================= -->
     <header>
         <div class="logo">
             <img src="images/logo.png" alt="Advanced Logo">
@@ -35,49 +31,33 @@
         </nav>
     </header>
 
-    <!-- ================= HERO (Slide 1) ================= -->
-    <section class="hero">
+    <!-- SLIDE 1: HERO -->
+    <section class="full-page hero">
         <div class="hero-content">
             <span class="hero-tag">DEFENSE • AEROSPACE • AUTONOMY</span>
             <h1>ADVANCED TEKNOLOJİ<br>MÜHENDİSLİK ve TİC. LTD. ŞTİ.</h1>
             <p class="hero-subtitle">Guidance, Control, Navigation and High-Performance System Design</p>
-            
             <div class="hero-buttons">
-                <a href="#about" class="btn-primary">Learn More</a>
+                <a href="#projects" class="btn-primary">View Projects</a>
                 <a href="#contact" class="btn-secondary">Contact Us</a>
             </div>
-
             <div class="hero-stats">
-                <div class="stat">
-                    <h2>2020</h2>
-                    <span>Founded</span>
-                </div>
-                <div class="stat">
-                    <h2 class="counter" data-target="10">0</h2>
-                    <span>Projects</span>
-                </div>
-                <div class="stat">
-                    <h2 class="counter" data-target="2">0</h2>
-                    <span>Defense Customers</span>
-                </div>
-                <div class="stat">
-                    <h2 class="counter" data-target="100">0</h2>
-                    <span>Engineering Focus</span>
-                </div>
+                <div class="stat"><h2>2020</h2><span>Founded</span></div>
+                <div class="stat"><h2 class="counter" data-target="10">0</h2><span>Projects</span></div>
+                <div class="stat"><h2 class="counter" data-target="2">0</h2><span>Defense Customers</span></div>
+                <div class="stat"><h2 class="counter" data-target="100">0</h2><span>Engineering Focus</span></div>
             </div>
         </div>
     </section>
 
-    <!-- ================= ABOUT US (Slide 2) ================= -->
-    <section id="about">
+    <!-- SLIDE 2: ABOUT -->
+    <section id="about" class="full-page">
         <div class="container">
             <div class="section-header">
                 <h2>About Us</h2>
                 <div class="line"></div>
             </div>
-            <p class="section-p">
-                Advanced Technology & Engineering is a Turkish engineering company specializing in inertial navigation systems, MEMS inertial sensor integration, embedded software, avionics, and autonomous technologies for defense and aerospace applications.
-            </p>
+            <p class="section-p">Advanced Technology & Engineering is a Turkish engineering company specializing in inertial navigation systems, MEMS inertial sensor integration, and autonomous technologies for defense and aerospace applications.</p>
             <div class="about-grid">
                 <div class="info-box"><h3>Founded</h3><p>2020</p></div>
                 <div class="info-box"><h3>Headquarters</h3><p>Ankara, Türkiye</p></div>
@@ -87,204 +67,92 @@
         </div>
     </section>
 
-    <!-- ================= ENGINEERING CAPABILITIES (Slide 3 & 4) ================= -->
-    <section id="expertise">
+    <!-- SLIDE 3 & 4: CAPABILITIES -->
+    <section id="expertise" class="full-page">
         <div class="container">
-            <div class="section-header">
-                <h2>Engineering Capabilities</h2>
-                <div class="line"></div>
-            </div>
+            <div class="section-header"><h2>Core Competencies</h2><div class="line"></div></div>
             <div class="grid-3">
-                <div class="glass-card">
-                    <i class="fa-solid fa-microchip card-icon"></i>
-                    <h3>Core Competencies</h3>
-                    <ul>
-                        <li>MEMS Inertial Sensors</li>
-                        <li>Fiber Optic Gyros</li>
-                        <li>Navigation Algorithms</li>
-                        <li>Sensor Fusion (EKF/UKF)</li>
-                        <li>INS/GNSS & AHRS</li>
-                    </ul>
-                </div>
-                <div class="glass-card">
-                    <i class="fa-solid fa-code card-icon"></i>
-                    <h3>Embedded Software</h3>
-                    <ul>
-                        <li>Embedded C/C++ Development</li>
-                        <li>Firmware & Driver Design</li>
-                        <li>PCB Bring-up & STM32/ARM</li>
-                        <li>Real-Time Systems (RTOS)</li>
-                        <li>MATLAB & System Modeling</li>
-                    </ul>
-                </div>
-                <div class="glass-card">
-                    <i class="fa-solid fa-rocket card-icon"></i>
-                    <h3>Avionics & Control</h3>
-                    <ul>
-                        <li>UAV Avionics Design</li>
-                        <li>Flight Control Computers</li>
-                        <li>Autonomous Flight Software</li>
-                        <li>Sensor Calibration Methods</li>
-                        <li>Navigation Filters</li>
-                    </ul>
-                </div>
+                <div class="glass-card"><i class="fa-solid fa-microchip card-icon"></i><h3>Navigation Tech</h3><ul><li>INS/GNSS Integration</li><li>Sensor Fusion (EKF/UKF)</li><li>Navigation Filters</li><li>Terrain Referenced Nav</li></ul></div>
+                <div class="glass-card"><i class="fa-solid fa-code card-icon"></i><h3>Embedded Systems</h3><ul><li>C/C++ Development</li><li>Real-Time Systems (RTOS)</li><li>Firmware & Driver Design</li><li>MATLAB Modeling</li></ul></div>
+                <div class="glass-card"><i class="fa-solid fa-rocket card-icon"></i><h3>Engineering</h3><ul><li>UAV Avionics Design</li><li>Flight Control Computers</li><li>Sensor Calibration</li><li>PCB Bring-up</li></ul></div>
             </div>
         </div>
     </section>
 
-    <!-- ================= SELECTED PROJECTS (Slide 5 & 6) ================= -->
-    <section id="projects">
+    <!-- SLIDE 5 & 6: PROJECTS (FULL DETAIL) -->
+    <section id="projects" class="full-page">
         <div class="container">
-            <div class="section-header">
-                <h2>Selected Project Experience</h2>
-                <div class="line"></div>
-                <p class="section-subtitle-text">Proven track record in high-dynamic platforms and contested environments.</p>
-            </div>
-
+            <div class="section-header"><h2>Selected Project Experience</h2><div class="line"></div></div>
             <div class="project-grid-detailed">
-                <!-- CATEGORY 1: NAVIGATION -->
                 <div class="project-category">
-                    <div class="cat-header">
-                        <i class="fa-solid fa-satellite-dish cat-icon-fa"></i>
-                        <h3>Navigation</h3>
-                    </div>
-                    <div class="project-card-v2">
-                        <h4>UDOKS (ASELSAN)</h4>
-                        <p>Proprietary navigation algorithms for platform positioning in GNSS-denied and GPS-jammed environments.</p>
-                        <div class="tech-tags"><span>GPS-Jammed</span><span>Contested EW</span></div>
-                    </div>
-                    <div class="project-card-v2">
-                        <h4>Dual GPS Navigation (TÜBİTAK)</h4>
-                        <p>Hybrid navigation using dual GNSS, IMU, and magnetometer sensor fusion.</p>
-                        <div class="tech-tags"><span>Hybrid Nav</span><span>Sensor Fusion</span></div>
-                    </div>
+                    <div class="cat-header"><i class="fa-solid fa-building-shield"></i><h3>ASELSAN</h3></div>
+                    <div class="project-card-v2"><h4>UDOKS</h4><p>Proprietary navigation algorithms for positioning in GNSS-denied and GPS-jammed environments.</p></div>
+                    <div class="project-card-v2"><h4>YNHKS</h4><p>High-precision motion control algorithms and system integration successfully delivered.</p></div>
                 </div>
-
-                <!-- CATEGORY 2: CONTROL -->
                 <div class="project-category">
-                    <div class="cat-header">
-                        <i class="fa-solid fa-plane-up cat-icon-fa"></i>
-                        <h3>Flight Control</h3>
-                    </div>
-                    <div class="project-card-v2">
-                        <h4>Onboard Landing System</h4>
-                        <p>Laser-based navigation solution for precise rotation, altitude, and velocity estimation.</p>
-                        <div class="tech-tags"><span>LiDAR Fusion</span><span>Auto-Landing</span></div>
-                    </div>
-                    <div class="project-card-v2">
-                        <h4>Advanced Flight Controller</h4>
-                        <p>Complete computer design and software for drones, helicopters, and quadcopters.</p>
-                        <div class="tech-tags"><span>UAV Avionics</span><span>Flight Software</span></div>
-                    </div>
+                    <div class="cat-header"><i class="fa-solid fa-microscope"></i><h3>TÜBİTAK</h3></div>
+                    <div class="project-card-v2"><h4>GPS Rotation System</h4><p>High-accuracy rotational measurement system for high-dynamic platforms.</p></div>
+                    <div class="project-card-v2"><h4>Onboard Landing System</h4><p>Laser-based solution providing precise altitude and vertical velocity estimation.</p></div>
                 </div>
-
-                <!-- CATEGORY 3: CALIBRATION -->
                 <div class="project-category">
-                    <div class="cat-header">
-                        <i class="fa-solid fa-crosshairs cat-icon-fa"></i>
-                        <h3>Calibration & Vision</h3>
-                    </div>
-                    <div class="project-card-v2">
-                        <h4>Magnetometer-Free Calibration</h4>
-                        <p>Novel methodology eliminating the need for external magnetometer references.</p>
-                        <div class="tech-tags"><span>Novel Algos</span><span>Magnetic Immunity</span></div>
-                    </div>
-                    <div class="project-card-v2">
-                        <h4>Camera Pose Estimation</h4>
-                        <p>Vision-based estimation of orientation using reference patterns for precision guidance.</p>
-                        <div class="tech-tags"><span>Vision Nav</span><span>Pose Estimation</span></div>
-                    </div>
+                    <div class="cat-header"><i class="fa-solid fa-flask-vial"></i><h3>ADVANCED R&D</h3></div>
+                    <div class="project-card-v2"><h4>Magnetometer-Free Calib</h4><p>Novel calibration methodology eliminating the need for external references.</p></div>
+                    <div class="project-card-v2"><h4>Camera Pose Estimation</h4><p>Vision-based estimation of orientation using reference patterns.</p></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ================= FLAGSHIP TECHNOLOGIES (Slide 7 & 8) ================= -->
-    <section id="technology">
+    <!-- SLIDE 7 & 8: FLAGSHIP TECH (FULL DETAIL) -->
+    <section id="technology" class="full-page">
         <div class="container">
-            <div class="section-header">
-                <span class="badge">FLAGSHIP TECHNOLOGIES</span>
-                <h2>Next-Generation Solutions</h2>
-                <div class="line"></div>
-            </div>
-
-            <!-- Landing System -->
+            <div class="section-header"><span class="badge">FLAGSHIP TECHNOLOGIES</span><h2>Advanced Solutions</h2><div class="line"></div></div>
             <div class="tech-content-grid">
                 <div class="tech-info-text">
-                    <div class="tech-title-area">
-                        <i class="fa-solid fa-plane-arrival tech-icon-main"></i>
-                        <h3>GPS-Denied Landing System</h3>
-                    </div>
-                    <p>Advanced sensor fusion combining <strong>LiDAR and Inertial data</strong> for autonomous landing in contested environments.</p>
-                    
-                    <ul class="tech-feature-list">
-                        <li><i class="fa-solid fa-check"></i> Automatic relative navigation < 8m</li>
-                        <li><i class="fa-solid fa-check"></i> Operation on moving surfaces</li>
-                        <li><i class="fa-solid fa-check"></i> High-precision 400Hz output</li>
-                    </ul>
-
+                    <div class="tech-title-area"><i class="fa-solid fa-plane-arrival"></i><h3>GPS-Denied Landing System</h3></div>
+                    <p>Designed for autonomous landing in contested environments using LiDAR & IMU sensor fusion.</p>
                     <div class="tech-specs-v2">
-                        <div class="spec-item">
-                            <i class="fa-solid fa-wave-square"></i>
-                            <div class="spec-val"><span>400 Hz</span><small>Nav Output</small></div>
-                        </div>
-                        <div class="spec-item">
-                            <i class="fa-solid fa-arrows-up-down"></i>
-                            <div class="spec-val"><span>2 cm</span><small>Alt. Accuracy</small></div>
-                        </div>
+                        <div class="spec-item"><i class="fa-solid fa-wave-square"></i><div class="spec-val"><span>400 Hz</span><small>Nav Output</small></div></div>
+                        <div class="spec-item"><i class="fa-solid fa-arrows-up-down"></i><div class="spec-val"><span>2 cm</span><small>Accuracy</small></div></div>
                     </div>
                 </div>
-                <div class="tech-visual">
-                    <img src="images/landing-tech.jpg" alt="Landing System" class="floating-img">
+                <div class="tech-visual"><img src="images/landing-tech.jpg" alt="Landing System" class="floating-img"></div>
+            </div>
+            <div class="spacer-80"></div>
+            <div class="tech-content-grid reverse">
+                <div class="tech-visual"><img src="images/trn-tech.jpg" alt="TRN System" class="floating-img"></div>
+                <div class="tech-info-text">
+                    <div class="tech-title-area"><i class="fa-solid fa-mountain-sun"></i><h3>Terrain Referenced Nav (TRN)</h3></div>
+                    <p>Positioning in contested EW environments using Radar and Digital Elevation Maps (DEM).</p>
+                    <div class="trn-tech-tags"><span>Radar Sensing</span><span>DEM Matching</span><span>Multi-Sensor Fusion</span></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ================= WHY CHOOSE US (Slide 12) ================= -->
-    <section id="why-us">
+    <!-- SLIDE 12: WHY US -->
+    <section id="why-us" class="full-page">
         <div class="container">
-            <div class="section-header">
-                <h2>Why Partner With Advanced?</h2>
-                <div class="line"></div>
-            </div>
+            <div class="section-header"><h2>Why Choose Us?</h2><div class="line"></div></div>
             <div class="grid-4">
-                <div class="why-card">
-                    <i class="fa-solid fa-shield-halved why-icon"></i>
-                    <h4>Technical Background</h4>
-                    <p>Strong engineering foundation with proven defense projects.</p>
-                </div>
-                <div class="why-card">
-                    <i class="fa-solid fa-handshake why-icon"></i>
-                    <h4>Local Support</h4>
-                    <p>Dedicated engineering support and integration services in Türkiye.</p>
-                </div>
-                <div class="why-card">
-                    <i class="fa-solid fa-gears why-icon"></i>
-                    <h4>Expertise</h4>
-                    <p>Embedded software expertise and sensor integration capability.</p>
-                </div>
-                <div class="why-card">
-                    <i class="fa-solid fa-bolt why-icon"></i>
-                    <h4>Rapid Prototyping</h4>
-                    <p>Fast development cycles and defense market knowledge.</p>
-                </div>
+                <div class="why-card"><i class="fa-solid fa-shield-halved"></i><h4>Proven Experience</h4><p>Proven technical background in defense industry projects.</p></div>
+                <div class="why-card"><i class="fa-solid fa-handshake"></i><h4>Local Integration</h4><p>Dedicated engineering support and integration in Türkiye.</p></div>
+                <div class="why-card"><i class="fa-solid fa-gears"></i><h4>Core Expertise</h4><p>Specialized in embedded software and sensor integration.</p></div>
+                <div class="why-card"><i class="fa-solid fa-bolt"></i><h4>Rapid Prototyping</h4><p>Fast development cycles and deep market knowledge.</p></div>
             </div>
         </div>
     </section>
 
-    <!-- ================= CONTACT (Slide 13) ================= -->
-    <section id="contact">
+    <!-- SLIDE 13: CONTACT -->
+    <section id="contact" class="full-page">
         <div class="container">
-            <div class="contact-wrapper">
-                <div class="contact-image">
-                    <img src="images/berkcan.jpg" alt="Berkcan Danışkan" class="profile-img">
-                </div>
-                <div class="contact-info">
+            <div class="contact-card-v2">
+                <div class="contact-profile"><img src="images/berkcan.jpg" alt="Berkcan Danışkan" class="profile-img-v2"></div>
+                <div class="contact-details-v2">
                     <h2>Contact Us</h2>
                     <h3>Berkcan Danışkan</h3>
                     <p class="job-title">General Manager</p>
-                    <div class="contact-links">
+                    <div class="contact-methods">
                         <p><i class="fa-solid fa-envelope"></i> <a href="mailto:berkcandaniskan@advancedteknolojimuhendislik.com">Email Us</a></p>
                         <p><i class="fa-solid fa-phone"></i> +90 (530) 121 03 95</p>
                         <p><i class="fa-solid fa-location-dot"></i> Ankara, Türkiye</p>
@@ -294,12 +162,8 @@
         </div>
     </section>
 
-    <!-- ================= FOOTER ================= -->
     <footer>
-        <div class="container">
-            <p>Advanced Teknoloji Mühendislik ve Ticaret Limited Şirketi</p>
-            <p>© 2026 Advanced Technology & Engineering | All Rights Reserved.</p>
-        </div>
+        <div class="container"><p>© 2026 Advanced Technology & Engineering | All Rights Reserved.</p></div>
     </footer>
 
     <script src="script.js"></script>
