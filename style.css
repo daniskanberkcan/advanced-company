@@ -163,7 +163,7 @@ footer { padding: 40px 0; border-top: 1px solid var(--border); text-align: cente
 @media (max-width: 768px) {
     :root { --header-height: 100px; }
     header { height: var(--header-height); padding: 0 15px; }
-    .logo img { height: 60px; } 
+    .logo img { height: 240px; } 
     .logo-text span { font-size: 18px; }
     .menu-toggle { display: block; }
     
