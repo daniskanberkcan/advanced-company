@@ -1,8 +1,8 @@
 /* =====================================================
-   ADVANCED TECHNOLOGY - JS v9.0 (Full Language & Animation)
+   ADVANCED TECHNOLOGY - JS v10.0 (Full Language, Animation & Mobile Menu)
 ===================================================== */
 
-// 1. ÇEVİRİ SÖZLÜĞÜ (Tüm index.html anahtarlarını kapsar)
+// 1. ÇEVİRİ SÖZLÜĞÜ
 const translations = {
     tr: {
         "logo-sub": "Teknoloji & Mühendislik",
@@ -189,19 +189,45 @@ function changeLanguage(lang) {
         }
     });
 
-    // Aktif buton görselini güncelle
     document.getElementById('btn-tr').classList.toggle('active', lang === 'tr');
     document.getElementById('btn-en').classList.toggle('active', lang === 'en');
 
-    // Seçimi kaydet
     localStorage.setItem('preferredLang', lang);
 }
 
 // 3. SAYFA YÜKLENDİĞİNDE ÇALIŞACAKLAR
 document.addEventListener("DOMContentLoaded", () => {
+    
     // Kayıtlı dili yükle
     const savedLang = localStorage.getItem('preferredLang') || 'en';
     changeLanguage(savedLang);
+
+    // --- MOBİL MENÜ MANTIĞI ---
+    const menuToggle = document.getElementById('mobile-menu');
+    const navMenu = document.getElementById('nav-menu');
+    const navLinks = document.querySelectorAll('nav a');
+
+    if(menuToggle && navMenu) {
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            // İkonu değiştir (Bars -> X)
+            const icon = menuToggle.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-xmark');
+        });
+
+        // Menüdeki bir linke basınca menüyü otomatik kapat
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                const icon = menuToggle.querySelector('i');
+                if(icon) {
+                    icon.classList.add('fa-bars');
+                    icon.classList.remove('fa-xmark');
+                }
+            });
+        });
+    }
 
     // Animasyon Gözlemcisi
     const appearanceObserver = new IntersectionObserver((entries) => {
@@ -241,7 +267,9 @@ document.addEventListener("DOMContentLoaded", () => {
             e.preventDefault();
             const targetElement = document.querySelector(this.getAttribute("href"));
             if (targetElement) {
-                window.scrollTo({ top: targetElement.offsetTop - 120, behavior: "smooth" });
+                // Header yüksekliği kadar ofset veriyoruz (mobilde ve masaüstünde farklılık gösterebilir)
+                const offset = window.innerWidth <= 768 ? 100 : 120;
+                window.scrollTo({ top: targetElement.offsetTop - offset, behavior: "smooth" });
             }
         });
     });
